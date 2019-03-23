@@ -1,0 +1,2 @@
+- Server only hosts puppeteer 
+- Client does everything using puppeteer-web
