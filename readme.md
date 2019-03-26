@@ -1,4 +1,5 @@
 A minimal example of using puppeteer with react. 
+
 ![](http://i.imgur.com/Avn73I4.png)
 
 - Server only hosts puppeteer 
