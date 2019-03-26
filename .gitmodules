@@ -1,0 +1,6 @@
+[submodule "puppeteer"]
+	path = puppeteer
+	url = https://github.com/GoogleChrome/puppeteer
+[submodule "client/puppeteer"]
+	path = client/puppeteer
+	url = https://github.com/GoogleChrome/puppeteer
