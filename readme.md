@@ -6,12 +6,12 @@ Usage:
 git clone --recursive https://github.com/entrptaher/playground-react-puppeteer -b parcel
 
 # Terminal 1
-cd server
+cd playground-react-puppeteer/server
 yarn
 yarn start
 
 # Terminal 2
-cd client
+cd playground-react-puppeteer/client
 yarn
 yarn start
 ```
