@@ -16,8 +16,8 @@
     "parcel-bundler": "^1.12.3"
   },
   "scripts": {
-    "build": "parcel build index.html  --no-minify",
-    "serve": "parcel serve index.html"
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html"
   },
   "alias": {
     "puppeteer": "./puppeteer"

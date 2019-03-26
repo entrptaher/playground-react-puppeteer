@@ -9,5 +9,8 @@
     "express": "^4.16.4",
     "http-proxy": "^1.17.0",
     "puppeteer": "^1.13.0"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
