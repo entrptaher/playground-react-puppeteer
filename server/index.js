@@ -1,8 +1,17 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const puppeteer = require("puppeteer");
+const http = require("http");
+const httpProxy = require("http-proxy");
+const proxy = new httpProxy.createProxyServer();
+const port = 4000;
 
-app.get('/', (req, res) => res.send('Hello World!'))
-app.get('/do/:action', (req, res) => res.send('Hello World!'))
+http
+  .createServer()
+  .on("upgrade", async (req, socket, head) => {
+    const browser = await puppeteer.launch({ headless: false });
+    const target = browser.wsEndpoint();
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+    proxy.ws(req, socket, head, { target });
+  })
+  .listen(port, function() {
+    console.log(`proxy server running at ${port}`);
+  });
