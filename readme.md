@@ -1,6 +1,6 @@
 A minimal example of using puppeteer with react. 
 
-![](https://i.imgur.com/XetZFNt.gif)
+![](demo.gif)
 
 - Server only hosts puppeteer 
 - Client does everything using `page.connect({})`
