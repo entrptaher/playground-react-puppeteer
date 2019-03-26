@@ -1,4 +1,4 @@
-A minimal example of using puppeteer with react. 
+A minimal example of using puppeteer with react. Created for a [bug report here](https://github.com/parcel-bundler/parcel/issues/2847) on parcel-builder.
 
 ![](demo.gif)
 
